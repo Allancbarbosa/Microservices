@@ -1,0 +1,20 @@
+logging:
+  level: DEBUG
+
+pidfile: /tmp/service-broker-example.pid
+
+nats:
+  url: nats://localhost
+
+host:
+  local: 127.0.0.1
+  public: service-broker-example.app2-dev.lds.org
+  port: 8080
+
+cloud_controller_url: https://api.app2-dev.lds.org
+
+client:
+  name: servicegateway
+  secret: gatewaysecret
+
+serviceAuthToken: ssshhhThisIsASecret
